@@ -1,5 +1,6 @@
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
+import CV from '../assets/CV_ATS_YUDHSITIRA MAULANA SAMARATUNGGA (1).pdf'
 
 const timeline = [
   { year: '2023', title: 'Started Game Development', desc: 'Began learning engines like Godot and Unreal Engine , and programming languages such as C++ & GDScript through personal projects and online courses.' },
@@ -46,8 +47,8 @@ export default function About() {
 
             {/* CV Download */}
             <motion.a
-            href="src/assets/CV_ATS_YUDHSITIRA MAULANA SAMARATUNGGA (1).pdf"
-              download
+              href={CV}
+              download="CV_ATS_YUDHSITIRA_MAULANA_SAMARATUNGGA.pdf"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
               className="inline-flex items-center gap-3 mt-8 px-8 py-4 rounded-full bg-accent text-black font-semibold text-sm hover:shadow-[0_0_30px_rgba(250,204,21,0.3)] transition-all duration-300"
