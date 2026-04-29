@@ -46,7 +46,7 @@ export default function About() {
 
             {/* CV Download */}
             <motion.a
-              href="/src/assets/CV_YUDHISTIRA MAULAN SAMARATUNGGA.pdf (1).pdf"
+              href="/assets/CV_YUDHISTIRA MAULAN SAMARATUNGGA.pdf (1).pdf"
               download
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}

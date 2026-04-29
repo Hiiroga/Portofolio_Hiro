@@ -50,7 +50,7 @@ export default function Hero() {
               </svg>
             </div>
             <div className="relative w-64 h-64 lg:w-80 lg:h-80 rounded-2xl overflow-hidden border-2 border-white/10 bg-dark-card shadow-2xl shadow-black/50">
-              <img src="/src/assets/foto yudhis.jpg" alt="Yudhis Profile" className="w-full h-full object-cover" />
+              <img src="/assets/foto yudhis.jpg" alt="Yudhis Profile" className="w-full h-full object-cover" />
               <div className="absolute top-0 left-0 w-6 h-6 border-t-2 border-l-2 border-accent/40 rounded-tl-lg"/>
               <div className="absolute bottom-0 right-0 w-6 h-6 border-b-2 border-r-2 border-accent/40 rounded-br-lg"/>
             </div>
