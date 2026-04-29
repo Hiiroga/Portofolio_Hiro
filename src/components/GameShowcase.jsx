@@ -6,7 +6,7 @@ const games = [
   {
     title: 'BeatRot',
     genre: 'Stealth Action',
-    platforms: ['PC', 'WebGL'],
+    platforms: ['PC'],
     image: null,
     roles: ['Gameplay Programming', 'Systems Design', 'Lead Developer'],
     itchUrl: '#',
@@ -38,10 +38,20 @@ const games = [
     genre: 'Narrative / Puzzle',
     platforms: ['PC'],
     image: null,
-    roles: ['Lead Developer', 'AI Artist', 'Dialogue System'],
+    roles: ['Lead Developer', 'AI Artist', 'Project Manager'],
     itchUrl: '#',
     sourceUrl: '#',
     color: '#22c55e',
+  },
+    {
+    title: 'FPS Prototype',
+    genre: 'FPS / Action',
+    platforms: ['PC'],
+    image: null,
+    roles: ['Lead Developer', 'Full Stack Developer', 'Systems Designer'],
+    itchUrl: '#',
+    sourceUrl: '#',
+    color: '#2a0686',
   },
 ]
 
