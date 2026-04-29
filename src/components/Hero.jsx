@@ -26,10 +26,6 @@ export default function Hero() {
               A passionate <span className="text-white font-medium">Game Development Enthusiast</span> specializing in gameplay programming, systems design, and interactive experiences.
             </p>
             <div className="flex flex-wrap gap-4">
-              <motion.a href="#cv" whileHover={{scale:1.03}} whileTap={{scale:0.97}} className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-accent text-black font-semibold text-sm hover:shadow-[0_0_30px_rgba(250,204,21,0.3)] transition-all duration-300">
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-                Resume
-              </motion.a>
               <motion.a href="#contact" whileHover={{scale:1.03}} whileTap={{scale:0.97}} className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border border-white/20 text-white font-semibold text-sm hover:border-accent/50 hover:text-accent hover:shadow-[0_0_30px_rgba(250,204,21,0.1)] transition-all duration-300">
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
                 Contact Me
