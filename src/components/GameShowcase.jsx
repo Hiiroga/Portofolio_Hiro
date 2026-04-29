@@ -7,60 +7,60 @@ const games = [
     title: 'BeatRot',
     genre: 'Rhythm',
     platforms: ['PC'],
-    image: null,
+    image: '/src/assets/beatRot.png',
     roles: ['Gameplay Programming', 'Systems Design', 'Lead Developer'],
-    itchUrl: '#',
-    sourceUrl: '#',
+    itchUrl: 'https://hiiroga.itch.io/beatrot',
+    sourceUrl: 'https://github.com/rakanysr/BEATROT',
     color: '#ef4444',
   },
   {
     title: 'Tower Bloxx',
     genre: 'Casual',
     platforms: ['PC'],
-    image: null,
+    image: '/src/assets/TBfix.png',
     roles: ['Systems Design', 'Physics Programming', 'UI Programming'],
     itchUrl: null,
-    sourceUrl: '#',
+    sourceUrl: 'https://github.com/Hiiroga/Tower-Bloxx',
     color: '#8b5cf6',
   },
   {
     title: 'Beyond the Sound and Sight',
     genre: 'Puzzle / Coop',
     platforms: ['PC'],
-    image: null,
+    image: '/src/assets/BTS.png',
     roles: ['Puzzle Design', 'Puzzle Implementation', 'Gameplay Programming'],
-    itchUrl: '#',
-    sourceUrl: '#',
+    itchUrl: 'https://hiiroga.itch.io/beyond-the-sound-and-sight',
+    sourceUrl: 'https://github.com/Hiiroga/Beyond-the-Sound-and-Sight',
     color: '#06b6d4',
   },
   {
     title: 'Unauthorized Echoes',
     genre: 'Narrative / Puzzle',
     platforms: ['PC'],
-    image: null,
+    image: '/src/assets/UE.png',
     roles: ['Lead Developer', 'AI Artist', 'Project Manager'],
-    itchUrl: '#',
-    sourceUrl: '#',
+    itchUrl: 'https://tnahonk.itch.io/unauthorized-echoes',
+    sourceUrl: 'https://github.com/Hiiroga/Unauthorized-Echoes',
     color: '#22c55e',
   },
     {
     title: 'FPS Prototype',
     genre: 'FPS / Action',
     platforms: ['PC'],
-    image: null,
+    image: '/src/assets/fpsPrf.png',
     roles: ['Lead Developer', 'Full Stack Developer'],
     itchUrl: null ,
-    sourceUrl: '#',
+    sourceUrl: 'https://github.com/Hiiroga/FPS-Prototype-Unreal-Engine',
     color: '#2a0686',
   },
       {
     title: 'Heroes Rising',
     genre: 'Turn-based Strategy',
     platforms: ['PC'],
-    image: null,
+    image: '/src/assets/hs.png',
     roles: ['Lead Developer', 'Full Stack Developer'],
     itchUrl: null ,
-    sourceUrl: '#',
+    sourceUrl: 'https://github.com/Hiiroga/Heroes-Rising',
     color: '#2a0686',
   },
 ]
@@ -78,14 +78,22 @@ function GameCard({ game, index }) {
       whileHover={{ y: -8, scale: 1.02 }}
       className="group relative bg-dark-card border border-dark-border rounded-2xl overflow-hidden transition-all duration-500 hover:border-white/10 hover:shadow-2xl hover:shadow-black/50"
     >
-      {/* Image placeholder */}
+      {/* Image section */}
       <div className="relative aspect-video overflow-hidden bg-gradient-to-br from-dark-hover to-dark-card">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center">
-            <svg className="w-12 h-12 mx-auto text-white/10 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}><path strokeLinecap="round" strokeLinejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-            <p className="text-xs text-muted">Screenshot / Video</p>
+        {game.image ? (
+          <img
+            src={game.image}
+            alt={game.title}
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+        ) : (
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-center">
+              <svg className="w-12 h-12 mx-auto text-white/10 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}><path strokeLinecap="round" strokeLinejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+              <p className="text-xs text-muted">Screenshot / Video</p>
+            </div>
           </div>
-        </div>
+        )}
         {/* Top accent bar */}
         <div className="absolute top-0 left-0 right-0 h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{ background: game.color }} />
         {/* Hover overlay */}
