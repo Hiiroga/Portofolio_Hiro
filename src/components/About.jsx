@@ -46,7 +46,8 @@ export default function About() {
 
             {/* CV Download */}
             <motion.a
-              href="#"
+              href="/src/assets/CV_YUDHISTIRA MAULAN SAMARATUNGGA.pdf (1).pdf"
+              download
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
               className="inline-flex items-center gap-3 mt-8 px-8 py-4 rounded-full bg-accent text-black font-semibold text-sm hover:shadow-[0_0_30px_rgba(250,204,21,0.3)] transition-all duration-300"
